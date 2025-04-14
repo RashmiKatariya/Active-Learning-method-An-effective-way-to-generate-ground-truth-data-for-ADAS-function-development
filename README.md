@@ -36,14 +36,15 @@ Referenced works span from foundational studies in Active Learning and Semi-Supe
 
 Active Learning is a **semi-supervised machine learning** technique where the algorithm queries the most informative data to label, involving humans only where needed.
 
-![Active Learning Loop](https://i.imgur.com/DZCvRt3.png)  
+![image](https://github.com/user-attachments/assets/c819a280-ee69-4348-8f89-622012ce3c87)
+  
 *Figure 1: Active Learning Process Overview*
 
 ---
 
 ## 🧪 Methodology
 
-### Tools Used
+### Pre-trained Models Used
 - **YOLOv3** for initial object detection
 - **YOLOv5 (s & n)** and **YOLOv8 (s & n)** for training and evaluation
 
@@ -69,7 +70,8 @@ Both approaches aim to maximize information gain with fewer labeled samples.
 
 ## ⚙️ Proposed Architecture
 
-![Proposed Methodology Flow](https://i.imgur.com/bvZqzAf.png)  
+![image](https://github.com/user-attachments/assets/b9698034-0f73-4c3c-acad-988e98f1f6b6)
+ 
 *Figure 2: Flow of Proposed Methodology using Active Learning*
 
 ---
@@ -79,28 +81,28 @@ Both approaches aim to maximize information gain with fewer labeled samples.
 ### YOLOv5 Results:
 
 **Least Confident Strategy (10 iterations)**  
-![YOLOv5 Least Confident](https://i.imgur.com/iv9sD7H.png)
+![image](https://github.com/user-attachments/assets/fe8042e9-283b-4a17-bc33-e7ff174b2d7a)
 
 **Entropy Based Strategy (10 iterations)**  
-![YOLOv5 Entropy Based](https://i.imgur.com/kdK4ZFV.png)
+![image](https://github.com/user-attachments/assets/b084a609-8cbd-4335-8317-89cf7a78174a)
 
 ### YOLOv8 Results:
 
 **Least Confident Strategy (6 iterations)**  
-![YOLOv8 Least Confident](https://i.imgur.com/GU5cFQx.png)
+![image](https://github.com/user-attachments/assets/8b73a27e-c33f-48b2-a922-40e2cd1e2960)
 
 **Entropy Based Strategy (6 iterations)**  
-![YOLOv8 Entropy Based](https://i.imgur.com/9YQqLaZ.png)
+![image](https://github.com/user-attachments/assets/60ec3ea8-1557-4928-96bb-f824c1397440)
 
 ---
 
 ## ✅ Output Visualization
 
 **Validated Labels for Each Frame**  
-![Validated Labels](https://i.imgur.com/LLGHE9z.png)
+![image](https://github.com/user-attachments/assets/f90c708a-ef9a-4c95-9cd1-5e242bd1109e)
 
 **Predicted Labels with Confidence**  
-![Predicted Labels](https://i.imgur.com/SxSRAgK.png)
+![image](https://github.com/user-attachments/assets/3ef077a8-b4c8-4fbe-95df-6667ff75122d)
 
 ---
 
