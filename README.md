@@ -79,6 +79,57 @@ Both approaches aim to maximize information gain with fewer labeled samples.
 
 ---
 
+## 📁 Folder Structure for YOLO Training
+
+Active-Learning-YOLO-Training/
+│
+├── data/                            # Main data folder
+│   ├── images/
+│   │   ├── train/                   # Training images
+│   │   └── val/                     # Validation images
+│   │
+│   └── labels/
+│       ├── train/                   # YOLO-format .txt label files for training
+│       └── val/                     # YOLO-format .txt label files for validation
+│
+├── model_config/                   # YAML config files
+│   ├── dataset.yaml                # YOLO data config (path to train/val, class names, etc.)
+│   └── hyp.yaml                    # (Optional) Hyperparameters for training
+│
+├── scripts/                        # Utility or training scripts
+│   ├── train.py                    # Script to launch YOLO training
+│   └── active_learning_loop.py     # Active learning loop integration
+│
+├── weights/                        # Pre-trained or saved weights
+│   ├── yolov5s.pt
+│   └── best.pt                     # Best model from training
+│
+├── outputs/                        # Results, evaluation, visualizations
+│   ├── predictions/
+│   └── metrics/
+│
+├── README.md                       # Project overview
+└── requirements.txt                # List of dependencies
+
+## 📝 Example dataset.yaml (used by YOLO)
+
+```bash
+train: ../data/images/train
+val: ../data/images/val
+
+nc: 3  # Number of classes
+names: ['car', 'pedestrian', 'sign']  # Replace with your class names
+```
+
+## 🚀 Training Command (YOLOv5 or YOLOv8)
+```bash
+# For YOLOv5
+python train.py --img 640 --batch 16 --epochs 50 --data model_config/dataset.yaml --weights yolov5s.pt --name active_learning_run
+
+# For YOLOv8 (Ultralytics CLI)
+yolo task=detect mode=train model=yolov8s.pt data=model_config/dataset.yaml epochs=50 imgsz=640
+```
+
 ## 🖼️ Results (Output Images)
 
 ### YOLOv5 Results:
