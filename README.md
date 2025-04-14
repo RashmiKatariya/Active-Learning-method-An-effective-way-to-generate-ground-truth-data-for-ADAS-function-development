@@ -45,8 +45,8 @@ Active Learning is a **semi-supervised machine learning** technique where the al
 ## 🧪 Methodology
 
 ### Pre-trained Models Used
-- **YOLOv3** for initial object detection
-- **YOLOv5 (s & n)** and **YOLOv8 (s & n)** for training and evaluation
+- **YOLOv3** for initial object detection (https://github.com/ultralytics/yolov3)
+- **YOLOv5 (s & n)** (https://github.com/ultralytics/yolov5) and **YOLOv8 (s & n)** for training and evaluation (https://docs.ultralytics.com/models/yolov8/)
 
 ### Steps:
 1. Manually label a small subset of the data
