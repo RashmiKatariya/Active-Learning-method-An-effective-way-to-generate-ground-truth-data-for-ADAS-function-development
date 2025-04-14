@@ -80,7 +80,7 @@ Both approaches aim to maximize information gain with fewer labeled samples.
 ---
 
 ## 📁 Folder Structure for YOLO Training
-
+```
 Active-Learning-YOLO-Training/
 │
 ├── data/                            # Main data folder
@@ -110,16 +110,21 @@ Active-Learning-YOLO-Training/
 │
 ├── README.md                       # Project overview
 └── requirements.txt                # List of dependencies
+```
+
+---
 
 ## 📝 Example dataset.yaml (used by YOLO)
 
-```bash
+```yaml
 train: ../data/images/train
 val: ../data/images/val
 
 nc: 3  # Number of classes
 names: ['car', 'pedestrian', 'sign']  # Replace with your class names
 ```
+
+---
 
 ## 🚀 Training Command (YOLOv5 or YOLOv8)
 ```bash
