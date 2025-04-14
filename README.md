@@ -4,6 +4,9 @@
 ## 🧠 Project Title
 **Active-Learning Method: An Effective Way to Generate Ground Truth Data for ADAS Function Development**
 
+## 🔍 Paper Publication
+[**Active-Learning Method: An Effective Way to Generate Ground Truth Data for ADAS Function Development**](https://www.sae.org/publications/technical-papers/content/2024-26-0364/)
+
 ## ✍️ Author
 Rashmi M. Katariya  
 Continental Automotive
